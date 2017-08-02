@@ -1,0 +1,14 @@
+package br.com.hibernate.configuration;
+
+import javax.persistence.EntityManager;
+
+public abstract class HAbstract<T> extends HConnection {
+	public abstract String getEntityName();
+	
+	public void incluir(T entity){
+		EntityManager entityMg = getEntityManager();
+		entityMg.getTransaction().begin();
+		entityMg.persist(entity);
+		entityMg.close();
+	}
+}

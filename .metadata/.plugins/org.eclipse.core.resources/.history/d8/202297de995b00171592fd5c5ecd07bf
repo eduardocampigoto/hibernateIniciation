@@ -1,0 +1,8 @@
+package br.com.hibernate.configuration;
+
+public abstract class HAbstract<T> extends HConnection {
+
+	
+	public abstract String getEntityName();
+	
+}

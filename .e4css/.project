@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>.e4css</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>e4_default_gtk.css</name>
+			<type>1</type>
+			<location>/home/d4rk0w1/Development/IDEs/eclipse/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/e4_default_gtk.css</location>
+		</link>
+		<link>
+			<name>moonrise-ui-standalone.css</name>
+			<type>1</type>
+			<location>/home/d4rk0w1/Development/IDEs/eclipse/configuration/org.eclipse.osgi/8/0/.cp/themes/css/moonrise-ui-standalone.css</location>
+		</link>
+		<link>
+			<name>moonrise-ui.css</name>
+			<type>1</type>
+			<location>/media/d4rk0w1/lvdt001/Softwares/Development/IDEs/eclipse/configuration/org.eclipse.osgi/8/0/.cp/themes/css/moonrise-ui.css</location>
+		</link>
+	</linkedResources>
+</projectDescription>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;RunnerPessoa.java&apos; to &apos;Hibernate001&apos;&#x0D;&#x0A;- Original project: &apos;Hibernate001&apos;&#x0D;&#x0A;- Destination element: &apos;Hibernate001&apos;&#x0D;&#x0A;- Original element: &apos;br.com.hibernate.main.RunnerPessoa.java&apos;" description="Copy compilation unit" destination="=Hibernate001" element1="/src&lt;br.com.hibernate.main{RunnerPessoa.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1498868510538" units="1" version="1.0"/>
+</session>

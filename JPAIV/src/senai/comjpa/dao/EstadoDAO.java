@@ -1,0 +1,7 @@
+package senai.comjpa.dao;
+
+import senai.comjpa.pojo.Estado;
+
+public interface EstadoDAO {
+	public Estado buscarPorId(int id);	
+}

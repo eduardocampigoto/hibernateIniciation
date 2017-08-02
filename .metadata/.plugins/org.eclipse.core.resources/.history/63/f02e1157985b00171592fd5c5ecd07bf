@@ -1,0 +1,19 @@
+package br.com.hibernate.configuration;
+
+import javax.persistence.EntityManagerFactory;
+
+public class HConnection  {
+	private EntityManagerFactory conexao;
+	
+	private EntityManagerFactory conectar(){
+		try{
+			if(conexao != null && conexao.isOpen()){
+				return conexao;
+			}
+		}catch(Exception e){
+			
+			e.printStackTrace();
+		}
+		
+	}
+}

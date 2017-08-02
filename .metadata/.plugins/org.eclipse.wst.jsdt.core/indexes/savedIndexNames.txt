@@ -1,0 +1,1 @@
+INDEX VERSION 1.3+/media/d4rk0w1/lvdt001/Development/Workspaces/Java/OTs/Hibernate/01/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes

@@ -1,0 +1,24 @@
+package br.com.hibernate.main;
+
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import br.com.hibernate.entity.Pessoa;
+
+public class Runner {
+	
+	
+	public static void main(String[] args){
+			Pessoa pessoa = new Pessoa();
+			pessoa.setNome("nome");
+			pessoa.setNome_mae("mae");
+			pessoa.setNome_pai("pai");
+			pessoa.setCpf("cpf");
+			pessoa.setRg("rg");
+			
+			EntityManagerFactory create = Persistence.createEntityManagerFactory("Agencia");
+			create.close();
+
+	}
+
+}

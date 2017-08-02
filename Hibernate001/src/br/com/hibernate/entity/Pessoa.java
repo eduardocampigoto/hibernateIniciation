@@ -1,0 +1,80 @@
+package br.com.hibernate.entity;
+
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+@Entity
+public class Pessoa {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+	@Column(nullable=false)
+	private String nome;
+	@Column(nullable=false)
+	private String rg;
+	@Column(nullable=false)
+	private String  cpf;	
+	@Column
+	private String nome_mae;
+	@Column
+	private String  nome_pai;
+	@Column
+	@Temporal(TemporalType.DATE)
+	private Date data_nasc;
+	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getRg() {
+		return rg;
+	}
+	public void setRg(String rg) {
+		this.rg = rg;
+	}
+	public String getCpf() {
+		return cpf;
+	}
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+	public String getNome_mae() {
+		return nome_mae;
+	}
+	public void setNome_mae(String nome_mae) {
+		this.nome_mae = nome_mae;
+	}
+	public String getNome_pai() {
+		return nome_pai;
+	}
+	public void setNome_pai(String nome_pai) {
+		this.nome_pai = nome_pai;
+	}
+	public Date getData_nasc() {
+		return data_nasc;
+	}
+	public void setData_nasc(Date data_nasc) {
+		this.data_nasc = data_nasc;
+	}
+	
+	
+
+}

@@ -1,0 +1,7 @@
+1497917015362	Delete elements
+1497917268511	Rename package 'dao'
+1497917276017	Rename package 'pojo'
+1497917283079	Rename package 'dao.jpa'
+1497917291207	Rename package 'dao.abstraction'
+1497917553013	Delete element
+1498088434586	Move 'persistence.xml' to 'META-INF'

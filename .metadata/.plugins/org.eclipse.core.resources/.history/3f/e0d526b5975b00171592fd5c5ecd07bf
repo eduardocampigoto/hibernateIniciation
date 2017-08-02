@@ -1,0 +1,33 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+        version="2.0">
+
+       <persistence-unit name="Agencia">
+       <class>br.com.hibernate.entity.Pessoa</class>
+       <!--<class>br.com.hibernate.entity.Agencia</class>
+         <class>br.com.hibernate.entity.Contrato</class>
+       -->
+       
+       <properties>
+       		<!--  configuração conexao -->
+	        <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.driver"></property>
+			<property name="javax.persistence.jdbc.url" value="br.com.hibernate.persistence.ConnectionConf.URL"></property>
+			<property name="javax.persistence.jdbc.database" value="br.com.hibernate.persistence.ConnectionConf.DATABASE"></property>
+	       	<property name="javax.persistence.jdbc.user" value="br.com.hibernate.persistence.ConnectionConf.USER"></property>
+	       	<property name="javax.persistence.jdbc.password" value="br.com.hibernate.persistence.ConnectionConf.PASSWORD"></property>       
+       
+       		<!-- configurações do hibernate -->
+       		<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL57InnoDBDialect"/>
+       		<property name="hibernate.show_sql" value="true"/>
+       		<property name="hibernate.format_sql" value="true"/>
+       		
+       		<!-- automatiza updates do banco e criação de tabelas -->
+       		<property name="hibernate.hbm2ddl.auto" value="true"/>
+       		<property name="" value=""/>
+       </properties>       
+       
+       </persistence-unit>
+       
+       
+      </persistence>

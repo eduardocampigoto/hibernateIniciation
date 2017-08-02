@@ -1,0 +1,40 @@
+package br.com.hibernate.entity;
+
+import java.util.List;
+
+public class Agencia {
+
+	private String descricao;
+	private String responsavel;
+	private List<Contrato> contratos;
+	
+	private void addContrato(Contrato c){	
+		this.contratos.add(c);
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public String getResponsavel() {
+		return responsavel;
+	}
+
+	public void setResponsavel(String responsavel) {
+		this.responsavel = responsavel;
+	}
+
+	public List<Contrato> getContratos() {
+		return contratos;
+	}
+
+	public void setContratos(List<Contrato> contratos) {
+		this.contratos = contratos;
+	}
+	
+	
+}

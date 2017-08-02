@@ -1,0 +1,27 @@
+package br.com.hibernate.configuration;
+
+import javax.persistence.EntityManager;
+
+import org.hibernate.query.Query;
+
+public abstract class HAbstract<T> extends HConnection {
+	public abstract String getEntityName();
+	
+	public void incluir(T entity){
+		EntityManager entityMg = getEntityManager();
+		entityMg.getTransaction().begin();
+		entityMg.persist(entity);
+		entityMg.close();
+	}
+	
+	
+	public T buscarPorId(int id){
+
+			String entidade = getEntityName();
+			String queryStr = "Select from "+entidade+" where id="+id;
+			Query query = super.getQuery(queryStr);
+			
+			return null;
+					
+	}
+}

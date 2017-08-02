@@ -1,0 +1,26 @@
+package br.com.hibernate.configuration;
+
+import javax.persistence.EntityManager;
+
+import org.eclipse.persistence.internal.jpa.rs.metadata.model.Query;
+import org.hibernate.Session;
+
+public abstract class HAbstract<T> extends HConnection {
+	public abstract String getEntityName();
+	
+	public void incluir(T entity){
+		EntityManager entityMg = getEntityManager();
+		entityMg.getTransaction().begin();
+		entityMg.persist(entity);
+		entityMg.close();
+	}
+	
+	
+	public T buscarPorId(int id){
+			Session session;
+			String entidade = getEntityName();
+			String queryStr = "from "+entidade+" where id="+id;
+			 query = session.createQuery(queryStr);
+					
+	}
+}
